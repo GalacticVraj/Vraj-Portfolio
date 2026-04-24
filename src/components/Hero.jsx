@@ -68,7 +68,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <img 
-            src={`${import.meta.env.BASE_URL}images/portfolio.jpeg`} 
+            src={`${import.meta.env.BASE_URL}images/portfolio.png`} 
             alt="Vraj Talati" 
             className="hero-profile-img" 
           />
