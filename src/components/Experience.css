@@ -1,0 +1,252 @@
+.exp-section {
+  position: relative;
+  background: var(--c-yellow);
+  overflow-x: hidden;
+}
+
+/* CRAZY MARQUEE BG */
+.exp-bg-marquee {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.1;
+  z-index: 0;
+  transform: rotate(-5deg) scale(1.2);
+}
+
+.exp-bg-marquee-inner {
+  display: flex;
+  white-space: nowrap;
+  font-size: 20vw;
+  font-weight: 900;
+  color: var(--c-text);
+  animation: scroll-left 20s linear infinite;
+}
+
+.exp-bg-marquee-inner span {
+  padding-right: 5vw;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.exp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.exp-header {
+  margin-bottom: 5rem;
+}
+
+.exp-heading {
+  font-size: var(--fs-h1);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  text-shadow: 4px 4px 0px white;
+}
+
+/* CRAZY TIMELINE */
+.crazy-timeline-wrapper {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.crazy-spine-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 10px,
+    var(--c-text) 10px,
+    var(--c-text) 20px
+  );
+  z-index: 0;
+}
+
+.crazy-spine-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--c-text);
+  transform-origin: top;
+}
+
+.crazy-nodes {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.crazy-row {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.crazy-side {
+  width: 100%;
+}
+
+.crazy-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crazy-marker {
+  width: 60px;
+  height: 60px;
+  border: var(--border-thick);
+  box-shadow: 6px 6px 0px var(--c-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.exp-card {
+  position: relative;
+  border: var(--border-thick);
+  box-shadow: 16px 16px 0px var(--c-text);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: rotate(var(--rot, 0deg));
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exp-card:hover {
+  transform: rotate(var(--rot, 0deg)) scale(1.03) !important; 
+  box-shadow: 24px 24px 0px var(--c-text);
+}
+
+.crazy-date-display {
+  padding: 0 3rem;
+}
+
+.crazy-date-display.right-align { text-align: right; }
+.crazy-date-display.left-align { text-align: left; }
+
+.crazy-period-box {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 2rem;
+  border: var(--border-thick);
+  box-shadow: 8px 8px 0px var(--c-text);
+  transform: rotate(-3deg);
+  transition: transform 0.2s;
+}
+.crazy-period-box:hover {
+  transform: rotate(2deg) scale(1.1);
+}
+
+.exp-role {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.exp-org {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.exp-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.exp-point {
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  gap: 1rem;
+}
+
+.exp-bullet {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.exp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border: var(--border-thick);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  width: fit-content;
+  transition: transform 0.2s;
+}
+
+.exp-link:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px var(--c-text) !important;
+}
+
+@media (max-width: 900px) {
+  .crazy-spine-track {
+    left: 40px;
+    transform: none;
+  }
+  
+  .crazy-row {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    gap: 1.5rem;
+    position: relative;
+  }
+
+  .crazy-date-wrapper {
+    order: 1;
+  }
+
+  .crazy-card-wrapper {
+    order: 2;
+  }
+
+  .crazy-center {
+    position: absolute;
+    left: 10px; /* 40px (spine) - 30px (half marker) = 10px */
+    top: 0;
+  }
+  
+  .crazy-date-display {
+    padding: 0;
+    text-align: left !important;
+  }
+  
+  .crazy-period-box {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transform: rotate(0deg);
+  }
+}

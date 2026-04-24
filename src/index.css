@@ -1,0 +1,145 @@
+/* ================================================================
+   VRAJ TALATI — NEOBRUTALIST TECHY THEME
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Syne:wght@400;700;800&family=Inter:wght@400;600;800&family=Space+Grotesk:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@400;700;900&display=swap');
+
+/* ── Tokens ─────────────────────────────────────────────────── */
+:root {
+  --c-bg: #f4f0ea;
+  --c-text: #111111;
+  --c-border: #111111;
+
+  /* Funky Neo colors */
+  --c-yellow: #fce81e;
+  --c-pink: #ff3366;
+  --c-blue: #00d2ff;
+  --c-purple: #b084e9;
+  --c-green: #34d399;
+  --c-orange: #fb923c;
+
+  /* Shadows */
+  --shadow-neo: 6px 6px 0px #111111;
+  --shadow-neo-hover: 10px 10px 0px #111111;
+  --shadow-neo-active: 2px 2px 0px #111111;
+  
+  /* Borders */
+  --border-thick: 3px solid #111111;
+  --border-thin: 2px solid #111111;
+
+  /* Fonts */
+  --ff-display: 'Unbounded', sans-serif;
+  --ff-syne: 'Syne', sans-serif;
+  --ff-body: 'Inter', sans-serif;
+  --ff-mono: 'Space Grotesk', monospace;
+  --ff-serif: 'Playfair Display', serif;
+
+  /* Type scale */
+  --fs-mega: clamp(4rem, 15vw, 13rem);
+  --fs-hero: clamp(3rem, 10vw, 8rem);
+  --fs-h1: clamp(2.5rem, 6vw, 5rem);
+  --fs-h2: clamp(1.8rem, 4vw, 3.5rem);
+  --fs-h3: clamp(1.25rem, 2vw, 1.75rem);
+  --fs-body: 1.0625rem;
+  --fs-small: 0.8125rem;
+
+  /* Spacing */
+  --section-pad: clamp(4rem, 10vh, 8rem);
+
+  /* Motion */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --duration-slow: 0.9s;
+}
+
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--ff-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(var(--c-border) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; border-bottom: var(--border-thin); }
+
+/* ── Shared Utilities ─────────────────────────────────────── */
+.section-tag {
+  font-family: var(--ff-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--c-yellow);
+  padding: 0.3rem 0.8rem;
+  border: var(--border-thin);
+  box-shadow: 3px 3px 0px var(--c-text);
+  transform: rotate(-2deg);
+}
+
+.grad-text {
+  background: var(--c-pink);
+  color: white;
+  padding: 0 0.5rem;
+  display: inline-block;
+  border: var(--border-thin);
+  box-shadow: 4px 4px 0px var(--c-text);
+  transform: rotate(1deg);
+  -webkit-text-fill-color: white; /* overriding previous gradient text */
+}
+
+.font-display { font-family: var(--ff-display); }
+.font-syne { font-family: var(--ff-syne); }
+.font-serif { font-family: var(--ff-serif); }
+.font-body { font-family: var(--ff-body); }
+.font-mono { font-family: var(--ff-mono); }
+
+.text-mega { font-size: var(--fs-mega); line-height: 0.85; }
+.text-hero { font-size: var(--fs-hero); line-height: 0.9; }
+.text-h1 { font-size: var(--fs-h1); }
+.text-h2 { font-size: var(--fs-h2); }
+
+/* ── Scroll bar ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 12px; border-left: var(--border-thin); }
+::-webkit-scrollbar-track { background: var(--c-bg); }
+::-webkit-scrollbar-thumb { background: var(--c-pink); border: var(--border-thin); border-right: none; }
+
+/* ── Section base ─────────────────────────────────────────── */
+.section-base {
+  padding: var(--section-pad) 5vw;
+  position: relative;
+  border-top: var(--border-thick);
+  background: var(--c-bg);
+}
+
+/* ── Neobrutalist Panel ──────────────────────────────────── */
+.glass {
+  background: #ffffff;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-neo);
+  border-radius: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.glass:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-neo-hover);
+}

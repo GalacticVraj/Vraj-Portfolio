@@ -1,0 +1,113 @@
+.contact-section {
+  background: var(--c-pink);
+  overflow: hidden;
+}
+
+.contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.contact-heading {
+  font-size: var(--fs-h1);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.95;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-sub {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  color: var(--c-text);
+}
+
+.cli-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cli-icon {
+  width: 44px; height: 44px;
+  display: grid;
+  place-items: center;
+  border: var(--border-thin);
+  box-shadow: 3px 3px 0px var(--c-text);
+  color: var(--c-text);
+}
+
+.cli-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+  margin-bottom: 0.25rem;
+}
+
+.cli-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cli-arrow {
+  color: var(--c-pink);
+}
+
+/* Marquee */
+.contact-marquee {
+  margin-top: 6rem;
+  border-top: var(--border-thick);
+  border-bottom: var(--border-thick);
+  padding: 1.5rem 0;
+  overflow: hidden;
+  background: white;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-word {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  color: var(--c-text);
+  flex-shrink: 0;
+}
+
+.contact-copyright {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.6;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

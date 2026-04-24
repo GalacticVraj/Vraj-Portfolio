@@ -1,0 +1,96 @@
+.edu-section {
+  background: var(--c-blue);
+}
+.edu-container { max-width: 1000px; margin: 0 auto; }
+.edu-header { margin-bottom: 4rem; }
+.edu-heading {
+  font-size: var(--fs-h1);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.edu-card {
+  background: white;
+  border: var(--border-thick);
+  box-shadow: 10px 10px 0px var(--c-text);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.edu-card:hover {
+  transform: translate(-6px, -6px);
+  box-shadow: 16px 16px 0px var(--c-text);
+}
+
+.edu-card-inner {
+  padding: 3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.edu-icon-wrap {
+  width: 64px; height: 64px;
+  flex-shrink: 0;
+  background: var(--c-yellow);
+  border: var(--border-thin);
+  box-shadow: 4px 4px 0px var(--c-text);
+  display: grid;
+  place-items: center;
+}
+
+.edu-institution {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.edu-degree {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.edu-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.edu-years {
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--c-text);
+  color: white;
+  padding: 0.3rem 1rem;
+  border: var(--border-thin);
+  display: inline-block;
+}
+
+.edu-cgpa {
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--c-pink);
+  color: white;
+  padding: 0.3rem 1rem;
+  border: var(--border-thin);
+  display: inline-block;
+  box-shadow: 2px 2px 0px var(--c-text);
+}
+
+.edu-stripe {
+  height: 12px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--c-yellow) 0px,
+    var(--c-yellow) 20px,
+    var(--c-text) 20px,
+    var(--c-text) 40px
+  );
+}
+
+@media (max-width: 768px) {
+  .edu-card-inner {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}

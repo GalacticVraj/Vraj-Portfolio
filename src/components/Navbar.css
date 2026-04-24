@@ -1,0 +1,109 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 3vw;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.navbar.scrolled {
+  background: var(--c-bg);
+  padding: 0.8rem 3vw;
+  border-bottom: var(--border-thick);
+  box-shadow: 0 4px 0 0 var(--c-text);
+}
+
+.nav-logo {
+  font-family: var(--ff-display);
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: var(--c-bg);
+  background: var(--c-text);
+  padding: 0.15rem 0.6rem;
+  border: var(--border-thick);
+  box-shadow: 4px 4px 0px var(--c-orange);
+  transform: rotate(-3deg);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.nav-logo:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  font-family: var(--ff-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--c-text);
+  padding: 0.4rem 0.6rem;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-link:hover {
+  background: var(--c-yellow);
+  border: var(--border-thin);
+  box-shadow: 3px 3px 0px var(--c-text);
+}
+
+.nav-link-num {
+  font-size: 0.65rem;
+  color: var(--c-pink);
+  margin-right: 0.3rem;
+}
+
+.nav-mobile-btn {
+  display: none;
+  background: white;
+  border: var(--border-thick);
+  padding: 0.5rem;
+  box-shadow: 4px 4px 0px var(--c-text);
+  cursor: pointer;
+  z-index: 101;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: var(--c-yellow);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile-link {
+  font-family: var(--ff-display);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--c-text);
+  text-transform: uppercase;
+  background: white;
+  padding: 1rem 2rem;
+  border: var(--border-thick);
+  box-shadow: 8px 8px 0px var(--c-text);
+  transition: transform 0.2s;
+}
+.mobile-link:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px var(--c-text);
+}
+
+@media (max-width: 1100px) {
+  .nav-links { display: none; }
+  .nav-mobile-btn { display: block; }
+}

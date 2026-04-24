@@ -1,0 +1,96 @@
+.research-curated-section {
+  background-color: var(--c-cream);
+  color: var(--c-cosmos);
+  padding: 15vh 5vw;
+}
+
+.res-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.res-header {
+  margin-bottom: 8vh;
+}
+
+.res-header h2 span {
+  color: var(--c-bright-red);
+}
+
+.research-clean-card {
+  background: white;
+  padding: 4rem;
+  box-shadow: 0 10px 40px rgba(0, 48, 73, 0.05);
+  border-left: 6px solid var(--c-bright-red);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.res-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.res-icon {
+  color: var(--c-bright-red);
+}
+
+.res-status {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+}
+
+.res-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.res-card-meta {
+  display: flex;
+  gap: 3rem;
+  font-weight: 700;
+  opacity: 0.8;
+  border-bottom: 1px solid rgba(0, 48, 73, 0.1);
+  padding-bottom: 2rem;
+}
+
+.res-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.res-point {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.res-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.res-kw {
+  font-size: 0.75rem;
+  background: var(--c-cosmos);
+  color: var(--c-cream);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .research-clean-card {
+    padding: 2rem;
+  }
+  .res-card-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
