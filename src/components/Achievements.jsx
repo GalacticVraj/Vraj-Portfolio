@@ -71,8 +71,11 @@ export default function Achievements() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="research-card-top">
-            <div className="research-icon-wrap">
-              <BookOpen size={24} />
+            <div className="rct-left">
+              <div className="research-icon-wrap">
+                <BookOpen size={24} />
+              </div>
+              <span className="research-type font-mono">RESEARCH PAPER</span>
             </div>
             <span className="font-mono research-status">{research.status}</span>
           </div>

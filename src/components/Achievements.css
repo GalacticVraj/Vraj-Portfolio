@@ -137,6 +137,20 @@
   justify-content: space-between;
   align-items: center;
 }
+.rct-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.research-type {
+  font-weight: 900;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  background: var(--c-yellow);
+  padding: 0.4rem 1rem;
+  border: var(--border-thin);
+  box-shadow: 3px 3px 0px var(--c-text);
+}
 .research-icon-wrap {
   width: 48px; height: 48px;
   background: var(--c-green);
