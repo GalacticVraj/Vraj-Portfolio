@@ -37,7 +37,7 @@ export default function Hero() {
 
       <div className="hero-inner">
         <div className="hero-topbar">
-          <span className="hero-topbar-label font-mono">PORTFOLIO © 2025</span>
+          <span className="hero-topbar-label font-mono">PORTFOLIO © 2026</span>
         </div>
 
         <div className="hero-name-block">

@@ -31,7 +31,12 @@ export default function Achievements() {
               >
                 {ach.image && (
                   <div className="ach-img-wrap">
-                    <img src={ach.image} alt={ach.title} className="ach-img" loading="lazy" />
+                    <img 
+                      src={`${import.meta.env.BASE_URL}${ach.image}`} 
+                      alt={ach.title} 
+                      className="ach-img" 
+                      loading="lazy" 
+                    />
                   </div>
                 )}
                 <div className="ach-body">

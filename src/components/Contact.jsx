@@ -87,7 +87,7 @@ export default function Contact() {
 
 
       <div className="contact-copyright font-mono">
-        © 2025 Vraj Talati
+        © 2026 Vraj Talati
       </div>
     </section>
   );
