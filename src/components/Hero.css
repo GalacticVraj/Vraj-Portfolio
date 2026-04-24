@@ -104,16 +104,17 @@
   line-height: 0.85;
   display: inline-block;
   letter-spacing: -0.04em;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-image-container {
   position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  width: 280px;
-  height: 350px;
-  z-index: 5;
+  top: 40%;
+  right: 2%;
+  width: 240px;
+  height: 300px;
+  z-index: 0; /* Move behind the name if possible, or just keep it separate */
 }
 .hero-profile-img {
   width: 100%;
@@ -123,6 +124,7 @@
   position: relative;
   z-index: 2;
   background: var(--c-bg);
+  filter: grayscale(20%);
 }
 .hero-img-frame {
   position: absolute;
@@ -130,8 +132,8 @@
   background: var(--c-pink);
   border: var(--border-thick);
   z-index: 1;
-  transform: translate(15px, 15px);
-  box-shadow: 10px 10px 0px var(--c-text);
+  transform: translate(10px, 10px);
+  box-shadow: 6px 6px 0px var(--c-text);
 }
 
 .hero-subtitle-block {
