@@ -5,8 +5,8 @@ import './Navbar.css';
 
 const navLinks = [
   { name: 'Milestones', href: '#achievements' },
-  { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Contact', href: '#contact' }
 ];
