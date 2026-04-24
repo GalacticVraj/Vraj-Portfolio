@@ -72,6 +72,12 @@ export default function Hero() {
               <span className="font-mono">AVAILABLE FOR INNOVATION</span>
             </div>
             
+            <div className="hero-quote-box">
+              <p className="hero-quote font-syne">
+                "Management is doing things right; leadership is doing the right things."
+              </p>
+            </div>
+            
             <div className="hero-socials">
               <span className="socials-label font-syne">CONNECT →</span>
               <a href={`mailto:${personal.email}`} className="hero-social-link" aria-label="Email"><Mail size={22} /></a>
