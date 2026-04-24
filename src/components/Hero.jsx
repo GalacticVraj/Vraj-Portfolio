@@ -66,7 +66,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div className="hero-footer" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.8 }}>
-          <p className="hero-bio font-body">{personal.about}</p>
+
           <div className="hero-socials">
             <a href={`mailto:${personal.email}`} className="hero-social-link" aria-label="Email"><Mail size={22} /></a>
             <a href={personal.github} target="_blank" rel="noreferrer" className="hero-social-link" aria-label="GitHub"><GithubIcon /></a>

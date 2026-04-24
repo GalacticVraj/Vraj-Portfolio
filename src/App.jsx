@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Achievements from './components/Achievements';
-import Education from './components/Education';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -27,7 +26,6 @@ export default function App() {
           <main>
             <Hero />
             <Achievements />
-            <Education />
             <Experience />
             <Projects />
             <Skills />

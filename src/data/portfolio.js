@@ -5,16 +5,11 @@ export const personal = {
   phone: "+91 7043765680",
   linkedin: "https://www.linkedin.com/in/vrajtalati",
   github: "https://github.com/GalacticVraj",
-  about: "Second-year CSE-MBA student at Nirma University. Passionate about machine learning, deep learning, and building high-impact digital products.",
-  objective: "Seeking opportunities to apply technical architecture and AI research to real-world problems."
+  about: "",
+  objective: ""
 };
 
-export const education = {
-  institution: "Nirma University",
-  degree: "B.Tech in Computer Science & Engineering with MBA",
-  years: "2024–2029",
-  cgpa: "Current CGPA: 8.2"
-};
+export const education = null;
 
 export const research = {
   title: "A Semantic Unified Language Agnostic Framework for Multi-Modal Content Similarity and Ranking",
