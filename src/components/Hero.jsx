@@ -72,7 +72,6 @@ export default function Hero() {
             alt="Vraj Talati" 
             className="hero-profile-img" 
           />
-          <div className="hero-img-frame" />
         </motion.div>
 
         <motion.div className="hero-subtitle-block" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.7 }}>
@@ -81,11 +80,6 @@ export default function Hero() {
 
         <motion.div className="hero-footer" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.8 }}>
           <div className="hero-footer-content">
-            <div className="hero-status">
-              <span className="status-dot"></span>
-              <span className="font-mono">STATUS: ACTIVE</span>
-            </div>
-            
             <div className="hero-quote-box">
               <p className="hero-quote font-syne">
                 "Management is doing things right; leadership is doing the right things."

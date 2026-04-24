@@ -110,31 +110,20 @@
 
 .hero-image-container {
   position: absolute;
-  top: 40%;
+  top: 10%;
   right: 2%;
-  width: 240px;
-  height: 300px;
-  z-index: 0; /* Move behind the name if possible, or just keep it separate */
+  width: 320px;
+  height: auto;
+  z-index: 2; /* On top of circle, below name */
+  pointer-events: none;
 }
 .hero-profile-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: var(--border-thick);
-  position: relative;
-  z-index: 2;
-  background: var(--c-bg);
-  filter: grayscale(20%);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(15px 15px 0px var(--c-text));
 }
-.hero-img-frame {
-  position: absolute;
-  inset: 0;
-  background: var(--c-pink);
-  border: var(--border-thick);
-  z-index: 1;
-  transform: translate(10px, 10px);
-  box-shadow: 6px 6px 0px var(--c-text);
-}
+/* Removed .hero-img-frame */
 
 .hero-subtitle-block {
   display: flex;
@@ -264,15 +253,13 @@
     top: 0; right: 0;
     transform: none;
     margin: 2rem auto;
-    width: 220px;
-    height: 280px;
+    width: 280px;
   }
   .name-row--indent { padding-left: 0; }
 }
 
 @media (max-width: 600px) {
   .hero-image-container {
-    width: 180px;
-    height: 240px;
+    width: 220px;
   }
 }
