@@ -83,17 +83,17 @@ export default function Hero() {
           <div className="hero-footer-content">
             <div className="hero-status">
               <span className="status-dot"></span>
-              <span className="font-mono">AVAILABLE FOR INNOVATION</span>
+              <span className="font-mono">STATUS: ACTIVE</span>
             </div>
             
             <div className="hero-quote-box">
               <p className="hero-quote font-syne">
                 "Management is doing things right; leadership is doing the right things."
               </p>
+              <cite className="hero-cite font-mono">— Peter Drucker</cite>
             </div>
             
             <div className="hero-socials">
-              <span className="socials-label font-syne">CONNECT →</span>
               <a href={`mailto:${personal.email}`} className="hero-social-link" aria-label="Email"><Mail size={22} /></a>
               <a href={personal.github} target="_blank" rel="noreferrer" className="hero-social-link" aria-label="GitHub"><GithubIcon /></a>
               <a href={personal.linkedin} target="_blank" rel="noreferrer" className="hero-social-link" aria-label="LinkedIn"><LinkedinIcon /></a>
