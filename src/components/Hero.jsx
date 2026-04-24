@@ -66,11 +66,18 @@ export default function Hero() {
         </motion.div>
 
         <motion.div className="hero-footer" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.8 }}>
-
-          <div className="hero-socials">
-            <a href={`mailto:${personal.email}`} className="hero-social-link" aria-label="Email"><Mail size={22} /></a>
-            <a href={personal.github} target="_blank" rel="noreferrer" className="hero-social-link" aria-label="GitHub"><GithubIcon /></a>
-            <a href={personal.linkedin} target="_blank" rel="noreferrer" className="hero-social-link" aria-label="LinkedIn"><LinkedinIcon /></a>
+          <div className="hero-footer-content">
+            <div className="hero-status">
+              <span className="status-dot"></span>
+              <span className="font-mono">AVAILABLE FOR INNOVATION</span>
+            </div>
+            
+            <div className="hero-socials">
+              <span className="socials-label font-syne">CONNECT →</span>
+              <a href={`mailto:${personal.email}`} className="hero-social-link" aria-label="Email"><Mail size={22} /></a>
+              <a href={personal.github} target="_blank" rel="noreferrer" className="hero-social-link" aria-label="GitHub"><GithubIcon /></a>
+              <a href={personal.linkedin} target="_blank" rel="noreferrer" className="hero-social-link" aria-label="LinkedIn"><LinkedinIcon /></a>
+            </div>
           </div>
         </motion.div>
       </div>
