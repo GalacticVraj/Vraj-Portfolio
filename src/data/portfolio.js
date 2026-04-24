@@ -127,7 +127,7 @@ export const achievements = [
     title: "Breach Hackathon, PDPU",
     year: "National",
     details: "Secured first place among top competing teams for innovative software development — built an end-to-end ERP system.",
-    image: "/images/breach.jpeg",
+    image: "images/breach.jpeg",
     link: "https://github.com/GalacticVraj/lastcommit-hackamined"
   },
   {
@@ -135,7 +135,7 @@ export const achievements = [
     title: "Mind Hackathon by CSI, Nirma University",
     year: "National",
     details: "Developed a production-grade Enterprise Resource Planning (ERP) system.",
-    image: "/images/csi.jpeg",
+    image: "images/csi.jpeg",
     link: null
   },
   {
@@ -143,7 +143,7 @@ export const achievements = [
     title: "LJ Hackovate",
     year: "National",
     details: "Secured second place among 150+ competing teams by building an AI governance platform.",
-    image: "/images/LJ.jpeg",
+    image: "images/LJ.jpeg",
     link: "https://github.com/Preetansh24/Hackovate-"
   },
   {
@@ -151,7 +151,7 @@ export const achievements = [
     title: "Intro to Options Hackathon, IIT Guwahati",
     year: "National",
     details: "Developed a risk analytics platform for options pricing and hedge fund strategies.",
-    image: "/images/IITguwahati.jpeg",
+    image: "images/IITguwahati.jpeg",
     link: "https://github.com/Preetansh24/OptionX-Hedge-Fund-Option-Pricing-Risk-Analytics"
   },
   {
@@ -159,7 +159,7 @@ export const achievements = [
     title: "NASA Space Apps Challenge (Edition 1)",
     year: "International",
     details: "Global Nominee for innovative space data analysis and visualization.",
-    image: "/images/nasa1.jpeg",
+    image: "images/nasa1.jpeg",
     link: "https://github.com/DeepLumiere/Project-Genesis"
   },
   {
@@ -167,7 +167,7 @@ export const achievements = [
     title: "NASA Space Apps Challenge (Edition 2)",
     year: "International",
     details: "Led the team to achieve Global Nominee status for advanced citizen science integration.",
-    image: "/images/nasa2.jpeg",
+    image: "images/nasa2.jpeg",
     link: "https://github.com/WoLfy15/ELITE-ERUDITE-NeoGenesis"
   }
 ];
