@@ -110,20 +110,34 @@
 
 .hero-image-container {
   position: absolute;
-  top: 10%;
-  right: 2%;
-  width: 320px;
+  top: 15%;
+  right: 5%;
+  width: 380px;
   height: auto;
   z-index: 2; /* On top of circle, below name */
-  pointer-events: none;
+  pointer-events: auto; /* Allow hover */
+  animation: floatImage 6s ease-in-out infinite;
 }
+
+@keyframes floatImage {
+  0% { transform: translateY(0px) rotate(2deg); }
+  50% { transform: translateY(-20px) rotate(-1deg); }
+  100% { transform: translateY(0px) rotate(2deg); }
+}
+
 .hero-profile-img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(15px 15px 0px var(--c-text));
+  filter: drop-shadow(10px 10px 0px var(--c-text)) drop-shadow(20px 20px 0px var(--c-pink));
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: crosshair;
 }
-/* Removed .hero-img-frame */
+
+.hero-profile-img:hover {
+  transform: scale(1.05) translate(-10px, -10px);
+  filter: drop-shadow(15px 15px 0px var(--c-text)) drop-shadow(30px 30px 0px var(--c-yellow));
+}
 
 .hero-subtitle-block {
   display: flex;
@@ -240,6 +254,7 @@
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 1100px) {
   .hero-footer-content {
     flex-direction: column;
     align-items: center;
