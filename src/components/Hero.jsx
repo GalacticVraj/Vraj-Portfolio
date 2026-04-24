@@ -61,6 +61,20 @@ export default function Hero() {
           </div>
         </div>
 
+        <motion.div 
+          className="hero-image-container"
+          initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+          animate={{ opacity: 1, scale: 1, rotate: 3 }}
+          transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <img 
+            src={`${import.meta.env.BASE_URL}images/portfolio.jpeg`} 
+            alt="Vraj Talati" 
+            className="hero-profile-img" 
+          />
+          <div className="hero-img-frame" />
+        </motion.div>
+
         <motion.div className="hero-subtitle-block" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.7 }}>
           <span className="hero-badge font-syne">{personal.title}</span>
         </motion.div>
