@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <a href="#home" className="nav-logo font-display">VT.</a>
+        <a href="#home" className="nav-logo font-display">VRAJ TALATI</a>
 
         <div className="nav-links">
           {navLinks.map((link, i) => (
