@@ -9,7 +9,12 @@ export const personal = {
   objective: ""
 };
 
-export const education = null;
+export const education = {
+  institution: "Nirma University",
+  degree: "Bachelor of Technology in Computer Science and Engineering",
+  years: "2022 – 2026",
+  cgpa: "CGPA: 8.5/10"
+};
 
 export const research = {
   title: "A Semantic Unified Language Agnostic Framework for Multi-Modal Content Similarity and Ranking",

@@ -48,24 +48,36 @@ export default function Navbar() {
         {mobileOpen && (
           <motion.div
             className="mobile-menu"
-            initial={{ y: '-100%' }}
-            animate={{ y: '0%' }}
-            exit={{ y: '-100%' }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ x: '100%' }}
+            animate={{ x: '0%' }}
+            exit={{ x: '100%' }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
-            {navLinks.map((link, i) => (
-              <motion.a
-                key={link.name}
-                href={link.href}
-                className="mobile-link font-display"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 + i * 0.08 }}
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.name}
-              </motion.a>
-            ))}
+            <div className="mobile-menu-content">
+              {navLinks.map((link, i) => (
+                <motion.a
+                  key={link.name}
+                  href={link.href}
+                  className="mobile-link font-display"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 + i * 0.1 }}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <span className="mobile-link-num">{String(i + 1).padStart(2, '0')}</span>
+                  {link.name}
+                </motion.a>
+              ))}
+            </div>
+            <motion.button
+              className="mobile-close-btn"
+              onClick={() => setMobileOpen(false)}
+              initial={{ opacity: 0, rotate: -90 }}
+              animate={{ opacity: 1, rotate: 0 }}
+              transition={{ delay: 0.5 }}
+            >
+              <X size={40} />
+            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>

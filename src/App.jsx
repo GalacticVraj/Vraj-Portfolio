@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -25,6 +26,7 @@ export default function App() {
           <Navbar />
           <main>
             <Hero />
+            <Education />
             <Achievements />
             <Projects />
             <Experience />

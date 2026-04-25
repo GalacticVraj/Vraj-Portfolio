@@ -78,29 +78,50 @@
   position: fixed;
   inset: 0;
   background: var(--c-yellow);
-  z-index: 100;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.mobile-menu-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .mobile-link {
   font-family: var(--ff-display);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: var(--c-text);
-  text-transform: uppercase;
+  text-decoration: none;
   background: white;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border: var(--border-thick);
   box-shadow: 8px 8px 0px var(--c-text);
-  transition: transform 0.2s;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
 }
-.mobile-link:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0px var(--c-text);
+
+.mobile-link-num {
+  font-family: var(--ff-mono);
+  font-size: 1.2rem;
+  color: var(--c-pink);
+}
+
+.mobile-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: white;
+  border: var(--border-thick);
+  padding: 0.5rem;
+  box-shadow: 4px 4px 0px var(--c-text);
+  cursor: pointer;
 }
 
 @media (max-width: 1100px) {
