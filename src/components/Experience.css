@@ -261,5 +261,13 @@
     padding: 1.5rem;
     box-shadow: 10px 10px 0px var(--c-text);
   }
+  .exp-role {
+    font-size: 1.25rem; /* Reduced from 1.8rem */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .exp-org {
+    font-size: 1rem;
+  }
 }
 

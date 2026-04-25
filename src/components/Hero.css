@@ -268,28 +268,60 @@
 }
 
 @media (max-width: 600px) {
+  .hero-section {
+    padding: 80px 1rem 2rem; /* Reduced top padding */
+    min-height: auto; /* Allow content to dictate height */
+  }
+  .hero-inner {
+    gap: 1rem;
+  }
+  .hero-topbar {
+    padding-bottom: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    border-bottom: none; /* Remove border on mobile for less clutter */
+  }
+  .hero-topbar-label, .hero-topbar-cta {
+    width: 100%;
+    text-align: center;
+  }
   .hero-image-container {
-    width: 200px;
+    width: 180px;
+    margin: 1.5rem auto 1rem;
   }
   .name-char {
-    font-size: clamp(2.5rem, 15vw, 4rem);
+    font-size: clamp(2rem, 18vw, 3.5rem); /* Clamped for narrow screens */
+    text-shadow: 2px 2px 0px white, 4px 4px 0px var(--c-text); /* Reduced shadow depth */
   }
-  .hero-section {
-    padding: 100px 1rem 0;
+  .hero-badge {
+    font-size: 1.4rem;
+    padding: 0.4rem 1rem;
+    box-shadow: 4px 4px 0px var(--c-blue);
   }
-  .hero-status {
-    padding: 0.4rem 0.8rem;
+  .hero-footer {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  .hero-footer-content {
+    gap: 1rem;
   }
   .hero-status span {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
   .hero-social-link {
-    width: 40px; height: 40px;
+    width: 38px; height: 38px;
   }
+  .hero-quote {
+    font-size: 0.9rem;
+  }
+  /* Reposition background shapes to avoid overlap */
   .neo-circle {
-    width: 60vw; height: 60vw;
+    width: 70vw; height: 70vw;
+    top: 2%; right: -15%;
   }
   .neo-square {
-    width: 45vw; height: 45vw;
+    width: 50vw; height: 50vw;
+    bottom: 5%; left: -10%;
   }
 }

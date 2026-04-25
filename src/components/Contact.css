@@ -110,4 +110,29 @@
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+  .contact-heading {
+    font-size: 2rem;
+  }
+  .contact-sub {
+    font-size: 1rem;
+  }
+  .contact-link-item {
+    padding: 1rem 1.5rem;
+  }
+  .cli-left {
+    gap: 1rem;
+  }
+  .cli-icon {
+    width: 36px; height: 36px;
+  }
+  .cli-value {
+    font-size: 0.9rem;
+  }
+  .contact-marquee {
+    margin-top: 3rem;
+    padding: 1rem 0;
+  }
+  .marquee-word {
+    font-size: 2.5rem;
+  }
 }

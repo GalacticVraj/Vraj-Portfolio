@@ -99,13 +99,31 @@
 }
 
 @media (max-width: 768px) {
-  .proj-section {
-    padding: 0 1rem;
+  .proj-header {
+    margin-bottom: 2.5rem;
+  }
+  .proj-heading {
+    font-size: 2rem;
+  }
+  .proj-group-label {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    margin-bottom: 1.5rem;
   }
   .proj-title {
     font-size: 1.2rem;
   }
   .proj-body {
     padding: 1.5rem;
+  }
+  .proj-desc {
+    font-size: 0.85rem;
+  }
+  .proj-tech-tag {
+    font-size: 0.75rem;
+  }
+  .proj-link {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
   }
 }

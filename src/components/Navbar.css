@@ -94,34 +94,36 @@
 
 .mobile-link {
   font-family: var(--ff-display);
-  font-size: 2.5rem;
+  font-size: 1.8rem; /* Reduced from 2.5rem */
   font-weight: 900;
   color: var(--c-text);
   text-decoration: none;
   background: white;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   border: var(--border-thick);
-  box-shadow: 8px 8px 0px var(--c-text);
+  box-shadow: 6px 6px 0px var(--c-text);
   display: flex;
-  align-items: baseline;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.8rem;
+  width: fit-content;
 }
 
 .mobile-link-num {
   font-family: var(--ff-mono);
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--c-pink);
 }
 
 .mobile-close-btn {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1.2rem;
+  right: 1.2rem;
   background: white;
   border: var(--border-thick);
-  padding: 0.5rem;
+  padding: 0.4rem;
   box-shadow: 4px 4px 0px var(--c-text);
   cursor: pointer;
+  z-index: 1001; /* Ensure it's above the links */
 }
 
 @media (max-width: 1100px) {
