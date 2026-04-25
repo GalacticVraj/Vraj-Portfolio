@@ -11,9 +11,9 @@ export const personal = {
 
 export const education = {
   institution: "Nirma University",
-  degree: "Bachelor of Technology in Computer Science and Engineering",
-  years: "2022 – 2026",
-  cgpa: "CGPA: 8.5/10"
+  degree: "Integrated B.Tech (CSE) and MBA",
+  years: "2024 – 2029",
+  cgpa: "CGPA: 8.2/10"
 };
 
 export const research = {
