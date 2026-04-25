@@ -107,3 +107,14 @@
   .nav-links { display: none; }
   .nav-mobile-btn { display: block; }
 }
+
+@media (max-width: 600px) {
+  .mobile-link {
+    font-size: 2rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .nav-logo {
+    font-size: 1rem;
+    padding: 0.1rem 0.4rem;
+  }
+}

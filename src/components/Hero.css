@@ -269,6 +269,27 @@
 
 @media (max-width: 600px) {
   .hero-image-container {
-    width: 220px;
+    width: 200px;
+  }
+  .name-char {
+    font-size: clamp(2.5rem, 15vw, 4rem);
+  }
+  .hero-section {
+    padding: 100px 1rem 0;
+  }
+  .hero-status {
+    padding: 0.4rem 0.8rem;
+  }
+  .hero-status span {
+    font-size: 0.8rem;
+  }
+  .hero-social-link {
+    width: 40px; height: 40px;
+  }
+  .neo-circle {
+    width: 60vw; height: 60vw;
+  }
+  .neo-square {
+    width: 45vw; height: 45vw;
   }
 }

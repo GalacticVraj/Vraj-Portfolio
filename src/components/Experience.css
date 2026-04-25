@@ -250,3 +250,27 @@
     transform: rotate(0deg);
   }
 }
+
+@media (max-width: 600px) {
+  .exp-container {
+    padding: 0 1rem;
+  }
+  .crazy-row {
+    padding-left: 50px;
+  }
+  .crazy-spine-track {
+    left: 25px;
+  }
+  .crazy-center {
+    left: -5px;
+  }
+  .exp-card {
+    padding: 1.5rem;
+  }
+  .exp-role {
+    font-size: 1.4rem;
+  }
+  .crazy-period-box {
+    font-size: 1.2rem;
+  }
+}

@@ -97,3 +97,15 @@
   transform: translate(-2px, -2px);
   box-shadow: 5px 5px 0px var(--c-text);
 }
+
+@media (max-width: 768px) {
+  .proj-section {
+    padding: 0 1rem;
+  }
+  .proj-title {
+    font-size: 1.2rem;
+  }
+  .proj-body {
+    padding: 1.5rem;
+  }
+}
