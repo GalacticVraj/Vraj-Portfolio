@@ -111,11 +111,11 @@
 .hero-image-container {
   position: absolute;
   top: 12%;
-  right: -2%;
+  right: -8%;
   width: 380px;
   height: auto;
-  z-index: 2; /* On top of circle, below name */
-  pointer-events: auto; /* Allow hover */
+  z-index: 2;
+  pointer-events: auto;
   transform-origin: center bottom;
 }
 
@@ -142,16 +142,18 @@
   align-items: flex-start;
   margin-top: 1rem;
 }
+
 .hero-badge {
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
   font-weight: 900;
   color: var(--c-bg);
   background: var(--c-text);
   padding: 0.5rem 1.5rem;
   border: var(--border-thick);
   box-shadow: 8px 8px 0px var(--c-blue);
-  transform: rotate(1deg);
-  letter-spacing: -0.02em;
+  transform: rotate(-1deg);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .hero-footer {
