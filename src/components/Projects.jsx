@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { projects } from '../data/portfolio';
-import { ArrowUpRight, Briefcase, BookOpen } from 'lucide-react';
+import { ArrowUpRight, BookOpen } from 'lucide-react';
 import './Projects.css';
 
 const GithubIcon = ({ size = 16 }) => (
@@ -51,7 +51,6 @@ export default function Projects() {
 
         <div className="proj-group">
           <div className="proj-group-label">
-            <Briefcase size={20} />
             <span className="font-display">INDUSTRIAL PROJECTS</span>
           </div>
           <div className="proj-list">
