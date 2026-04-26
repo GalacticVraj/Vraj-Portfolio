@@ -24,13 +24,25 @@ export default function Achievements() {
               <motion.div
                 key={i}
                 className="ach-card"
-                initial={{ opacity: 0, y: 50, rotate: i % 2 === 0 ? -2 : 2 }}
-                whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ 
+                  rotateY: i % 2 === 0 ? 5 : -5,
+                  rotateX: 2,
+                  scale: 1.02,
+                  z: 50
+                }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                style={{ perspective: "1000px" }}
               >
                 {ach.image && (
-                  <div className="ach-img-wrap">
+                  <div 
+                    className="ach-img-wrap" 
+                    style={{ 
+                      backgroundImage: `url(${import.meta.env.BASE_URL}${ach.image})` 
+                    }}
+                  >
                     <img 
                       src={`${import.meta.env.BASE_URL}${ach.image}`} 
                       alt={ach.title} 

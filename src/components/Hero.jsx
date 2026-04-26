@@ -63,7 +63,7 @@ export default function Hero() {
 
         <motion.div 
           className="hero-image-container"
-          initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+          initial={{ opacity: 0, scale: 0.95, rotate: -5 }}
           animate={{ opacity: 1, scale: 1, rotate: 3 }}
           transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
